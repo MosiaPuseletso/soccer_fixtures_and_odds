@@ -22,7 +22,6 @@ These instructions will help you set up the project on your local machine for de
 
 Before you begin, make sure you have the following installed:
 
-- [ReactJS]
 - [Node.js](https://nodejs.org) - version 18.7.0
 - [npm](https://www.npmjs.com/) - version 8.15.0
 - [postman](https://www.postman.com/downloads/)
