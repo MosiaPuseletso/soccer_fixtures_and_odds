@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "9b289853-189c-4302-8630-cc96623d6cb7",
+		"name": "soccer_fixtures_and_odds",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28939992"
+	},
+	"item": [
+		{
+			"name": "getAllFixtures",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-RapidAPI-Key",
+						"value": "34f853044bmsh87dfaf90f974567p1c1371jsn5d126ef19a7d",
+						"type": "default"
+					},
+					{
+						"key": "X-RapidAPI-Host",
+						"value": "soccerway-feed.p.rapidapi.com",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/fixtures?date=2023-08-06",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"fixtures"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2023-08-06"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllOdds",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/odds",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"odds"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFixtureByTeamName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/fixtures/South Africa?date=2023-08-06",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"fixtures",
+						"South Africa"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2023-08-06"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getOddsByTeamName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/odds/Orlando Pirates FC",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"odds",
+						"Orlando Pirates FC"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
